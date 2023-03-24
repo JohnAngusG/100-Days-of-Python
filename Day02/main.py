@@ -6,3 +6,6 @@ tip_percentage = float(input("What percentage tip would you like to give? 10, 12
 if tip_percentage > 1:
     total_payment = round((total_bill*(1 + tip_percentage/100))/(total_people), 2)
     print(f"Each person should pay {total_payment}")
+else:
+    total_payment = round((total_bill*(1 + tip_percentage))/(total_people), 2)
+    print(f"Each person should pay {total_payment}")
